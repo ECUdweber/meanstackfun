@@ -1,0 +1,28 @@
+<section data-ng-controller="GoodsController" data-ng-init="findOne()">
+	<div class="page-header">
+		<h1 data-ng-bind="good.name"></h1>
+		<h3 data-ng-bind="good.description"></h3>
+	</div>
+	<div class="pull-right" data-ng-show="((authentication.user) && (authentication.user._id == good.user._id))">
+		<a class="btn btn-primary" href="/#!/goods/{{good._id}}/edit">
+			<i class="glyphicon glyphicon-edit"></i>
+		</a>
+		<a class="btn btn-primary" data-ng-click="remove();">
+			<i class="glyphicon glyphicon-trash"></i>
+		</a>
+	</div>
+	<small>
+		<em class="text-muted">
+			Posted on
+			<span data-ng-bind="good.created | date:'mediumDate'"></span>
+			by
+			<span data-ng-bind="good.user.displayName"></span>
+		</em>
+	</small>
+
+	<div class="btn_container">
+		<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+		<button type="button" class="btn btn-primary" data-ng-click="bidOnItem()">Place a Bid</button>	
+	</div>
+
+</section>

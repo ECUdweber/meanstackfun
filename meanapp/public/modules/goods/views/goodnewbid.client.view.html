@@ -1,0 +1,20 @@
+<section data-ng-controller="GoodsController" data-ng-init="findOne()">
+	<pre>
+	Current Good: {{ good | json }}
+	</pre>
+
+	<div class="page-header">
+		<h1 data-ng-bind="good.name"></h1>
+		<h3 data-ng-bind="good.description"></h3>
+	</div>
+	<div data-ng-show="((authentication.user) && (authentication.user._id == good.user._id))">
+		<p>Current bid: <input ng-model="bidValue"/></p>
+	    <div jq-slider model="bidValue" min="1" max="1000" step="1"></div>  
+	</div>
+
+	<div class="btn_container">
+		<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+		<button type="button" class="btn btn-primary" data-ng-click="submitBid()">Submit Bid</button>	
+	</div>	
+
+</section>

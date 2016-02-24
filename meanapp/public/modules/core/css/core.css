@@ -1,0 +1,31 @@
+/* line 4, core.scss */
+.content {
+  margin-top: 50px;
+}
+
+/* line 7, core.scss */
+.undecorated-link:hover {
+  text-decoration: none;
+}
+
+/* line 10, core.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 13, core.scss */
+.ng-invalid.ng-dirty {
+  border-color: #FA787E;
+}
+
+/* line 16, core.scss */
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+  font-weight: bold;
+}
+
+/* line 20, core.scss */
+.btn_container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

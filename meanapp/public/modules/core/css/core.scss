@@ -1,0 +1,23 @@
+$font-stack:    Helvetica, sans-serif;
+$primary-grey: #e3e3e3;
+
+.content {
+	margin-top: 50px;
+}
+.undecorated-link:hover {
+	text-decoration: none;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+	display: none !important;
+}
+.ng-invalid.ng-dirty {
+	border-color: #FA787E;
+}
+.ng-valid.ng-dirty {
+	border-color: #78FA89;
+	font-weight: bold;
+}
+.btn_container {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
